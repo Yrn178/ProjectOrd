@@ -1,0 +1,127 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+.hhh{
+    background-color: hsl(0, 0%, 9%);
+}
+
+:root{
+    --btncolor: hwb(272 22% 61%);
+    --btnsdvig: rgb(137, 94, 173);
+}
+
+.nav_item{
+    margin-left: 50px;
+}
+
+header{
+	width: 100%;
+	background: hsla(240, 5%, 7%, 0.8);
+}
+
+.header_content{
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.li{
+    color: white;
+}
+
+.btn{
+    margin-left: 50px;
+    padding: 8px 15px;
+    background-color: var(--btncolor);
+    color: hwb(0 100% 0%);
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.LangSelector{
+    background-color: hsla(240, 5%, 7%, 0.8);
+    color: white;
+    border:0px;
+    outline:0px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+.sm{
+    border-radius: 6%;
+    margin-top: 100px;
+    box-shadow: -125px 0px 94px 10px rgba(255, 0, 221, 0.178);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    list-style-type: none;
+}
+
+.btn2{
+    padding: 8px 15px;
+    background-color: var(--btncolor);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.w{
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.w:active {
+    transform: translateY(4px);
+}
+
+.nav_item a, .btn2 {
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--btnsdvig);
+}
+
+.btn:active {
+  background-color: var(--btnsdvig);
+  transform: translateY(4px);
+}
+
+.btn2:hover {
+    background-color: var(--btnsdvig);
+}
+
+.btn2:active {
+  background-color: var(--btnsdvig);
+  transform: translateY(4px);
+}
