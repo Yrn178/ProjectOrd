@@ -11,6 +11,7 @@
 :root{
     --btncolor: hwb(272 22% 61%);
     --btnsdvig: rgb(137, 94, 173);
+    --shapak: hsla(240, 6%, 7%, 0.473);
 }
 
 .nav_item{
@@ -19,7 +20,8 @@
 
 header{
 	width: 100%;
-	background: hsla(240, 5%, 7%, 0.8);
+	background: var(--shapak);
+    position: fixed;
 }
 
 .header_content{
@@ -33,7 +35,6 @@ ul{
     display: flex;
     list-style: none;
     margin-right: 50px;
-    cursor: pointer;
 }
 
 .li{
@@ -42,7 +43,7 @@ ul{
 
 .btn{
     margin-left: 50px;
-    padding: 8px 15px;
+    padding: 8px 15px;  
     background-color: var(--btncolor);
     color: hwb(0 100% 0%);
     text-decoration: none;
@@ -67,7 +68,7 @@ ul{
     justify-content: center;
     text-align: left;
     color: aliceblue;
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .sm{
@@ -117,6 +118,14 @@ ul{
   transform: translateY(4px);
 }
 
+.LangSelector{
+    cursor: pointer;
+}
+
+.lan{
+    cursor: pointer;
+}
+
 .btn2:hover {
     background-color: var(--btnsdvig);
 }
@@ -133,14 +142,16 @@ h3{
 .dropdown{
     font-family: 'opensans-regular';
     font-size: .95em;
+    cursor: pointer;
 }
 
 .dropbtn {
-    background-color: hsla(240, 5%, 7%, 0.8);
+    background-color: #00000000;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
+    cursor: pointer;
   }
 
   .dropdown {
@@ -153,7 +164,6 @@ h3{
     display: none;
     position: absolute;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
@@ -167,4 +177,4 @@ h3{
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: hsla(240, 5%, 7%, 0.8);}
+  .dropdown:hover .dropbtn {background-color: var(--shapak);}
