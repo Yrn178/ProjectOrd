@@ -9,23 +9,28 @@
     --btnsdvig: rgb(137, 94, 173);
     --shapak: hsla(240, 6%, 7%, 0.473);
 }
+
 ul{
     list-style: none;
 }
+
 a{
     text-decoration: none;
+    background-color: transparent;
 }
+
 .container{
     max-width: 1300px;
     width: 100%;
     margin: 0px     auto;
 }
+
 .hhh{
     background-color: hsl(0, 0%, 9%);
 }
 
-
 header{
+    z-index: 99999999;
     width: 100%;
 	background: var(--shapak);
     backdrop-filter: blur(10px);
@@ -74,6 +79,10 @@ header{
     margin: 0 auto;
 }
 
+.main{
+    overflow: hidden;
+}
+
 .fs{
     display: flex;
     align-items: center;
@@ -92,9 +101,11 @@ header{
     margin-top: 100px;
     box-shadow: -125px 0px 94px 10px rgba(255, 0, 221, 0.178);
 }
+
 option{
     background: rgb(31, 31, 31);
 }
+
 .box {
     display: flex;
     flex-direction: column;
@@ -116,7 +127,12 @@ option{
 
 .w{
     padding-left: 20px;
+    color: white;
     cursor: pointer;
+}
+
+.w:hover{
+    color: purple;
 }
 
 .w:active {
@@ -182,14 +198,13 @@ h3{
     position: relative;
     display: flex;
     flex-direction: column;
-    
+
 
   }
-  
+
   .dropdown-content {
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    /* display: none;    */
     position: absolute;
     width: 100%;
     top: 100%;
@@ -198,7 +213,7 @@ h3{
     z-index: 3;
     transition: all .6s;
   }
-  
+
   .dropdown-content a {
     background-color:hsla(240, 5%, 7%, 0.8) ;
     color: rgb(199, 199, 199);
@@ -206,9 +221,9 @@ h3{
     text-decoration: none;
     display: block;
   }
-  
+
   .dropdown:hover .dropdown-content { height: calc(var(--count) * 41px); }
-  
+
   .dropdown:hover .dropbtn {background-color: var(--shapak);}
 
 
@@ -221,8 +236,31 @@ h3{
     }
 }
 
+.industry{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 220px;
+    margin-bottom: 100px;
+    align-self: flex-start;
+}
 
-.cs{
-    margin-top: 600px;
-    cursor: pointer;
+
+.game-icon_container{
+    width: 325px;
+    height: 600px;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: block;
+    width: max-content;
+}
+
+.game-icon_cs{
+    width: 95px;
+    height: 95px;
+    margin-left: 106px;
+    margin-top: 35px;
+    background: #fff;
+    border-radius: 15px;
 }
