@@ -252,7 +252,7 @@ h3{
     position: relative;
     margin-top: 100px;
     margin-bottom: 50px;
-    display: block;
+    display: flex;
     width: max-content;
 }
 
@@ -260,7 +260,14 @@ h3{
     width: 95px;
     height: 95px;
     margin-left: 106px;
-    margin-top: 35px;
     background: #fff;
     border-radius: 15px;
+    
+}
+
+.game_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
