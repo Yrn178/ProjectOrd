@@ -265,6 +265,24 @@ h3{
     
 }
 
+.game-icon_cod {
+    width: 75px;
+    height: 75px;
+    margin-top: -40px;
+    margin-left: 350px;
+    background: #FFF170;
+    border-radius: 12px;
+}
+
+.game-icon_gm {
+    width: 88px;
+    height: 88px;
+    top: 160px;
+    margin-left: 30px;
+    background: #FFFFFF;
+    border-radius: 14px;
+}
+
 .game_icon {
     display: flex;
     align-items: center;
